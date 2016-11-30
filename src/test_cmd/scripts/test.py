@@ -12,7 +12,7 @@ if __name__ == '__main__':
     #    p.publish(twist)
     #    r.sleep()
 
-    twist.linear.z = 34000
+    twist.linear.z = 31000
     while not rospy.is_shutdown():
         p.publish(twist)
         r.sleep()
