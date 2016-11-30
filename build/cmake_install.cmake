@@ -124,6 +124,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_description/cmake_install.cmake")
   INCLUDE("/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_tools/cmake_install.cmake")
   INCLUDE("/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_driver/cmake_install.cmake")
+  INCLUDE("/home/bitcraze/ros_workspace/build/test_cmd/cmake_install.cmake")
   INCLUDE("/home/bitcraze/ros_workspace/build/vicon_bridge/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

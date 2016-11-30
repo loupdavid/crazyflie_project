@@ -1,0 +1,8 @@
+prefix=/home/bitcraze/ros_workspace/install
+
+Name: test_cmd
+Description: Description of test_cmd
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bitcraze/ros_workspace/install/lib 
+Requires: 

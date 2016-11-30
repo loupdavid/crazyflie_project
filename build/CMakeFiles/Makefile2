@@ -1743,8 +1743,8 @@ clean: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_gencpp.dir/cle
 
 # All Build rule for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles 
@@ -1780,11 +1780,11 @@ clean: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messa
 
 # All Build rule for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GenericLogData.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles  6 7 8 9 10
@@ -1816,11 +1816,11 @@ clean: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messa
 
 # All Build rule for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GenericLogData.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles  11 12 13 14 15
@@ -1852,11 +1852,11 @@ clean: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messa
 
 # All Build rule for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_controller/CMakeFiles/std_msgs_generate_messages_py.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_GenericLogData.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir/all
+crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_LogBlock.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_UpdateParams.dir/all
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_RemoveCrazyflie.dir/all
-crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_AddCrazyflie.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles  16 17 18 19 20 21 22
@@ -1980,6 +1980,21 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/clean:
 # clean rule for target.
 clean: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test_cmd
+
+# Convenience name for "all" pass in the directory.
+test_cmd/all:
+.PHONY : test_cmd/all
+
+# Convenience name for "clean" pass in the directory.
+test_cmd/clean:
+.PHONY : test_cmd/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test_cmd/preinstall:
+.PHONY : test_cmd/preinstall
 
 #=============================================================================
 # Directory level rules for directory vicon_bridge
@@ -2646,8 +2661,8 @@ clean: vicon_bridge/CMakeFiles/vicon_bridge_gencpp.dir/clean
 
 # All Build rule for target.
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/all: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/all: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/all: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/all: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/depend
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles 
@@ -2683,11 +2698,11 @@ clean: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/clean
 
 # All Build rule for target.
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Marker.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconGrabPose.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/all
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/depend
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles  35 36 37 38 39
@@ -2719,11 +2734,11 @@ clean: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/clean
 
 # All Build rule for target.
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Marker.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconGrabPose.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/all
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/depend
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles  40 41 42 43 44
@@ -2755,11 +2770,11 @@ clean: vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/clean
 
 # All Build rule for target.
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: crazyflie_ros/crazyflie_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Marker.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconGrabPose.dir/all
 vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment.dir/all
-vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/all
+vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/all: vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/all
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/depend
 	$(MAKE) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bitcraze/ros_workspace/build/CMakeFiles  45 46 47 48 49 50 51

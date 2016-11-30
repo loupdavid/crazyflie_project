@@ -305,6 +305,9 @@ crazyflie_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyflie_ros/crazy
 //Value Computed by CMake
 crazyflie_controller_BINARY_DIR:STATIC=/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_controller
 
+//The directory containing a CMake configuration file for crazyflie_controller.
+crazyflie_controller_DIR:PATH=/home/bitcraze/ros_workspace/devel/share/crazyflie_controller/cmake
+
 //Value Computed by CMake
 crazyflie_controller_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyflie_ros/crazyflie_controller
 
@@ -323,6 +326,9 @@ crazyflie_cpp_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyflie_ros/c
 //Value Computed by CMake
 crazyflie_demo_BINARY_DIR:STATIC=/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_demo
 
+//The directory containing a CMake configuration file for crazyflie_demo.
+crazyflie_demo_DIR:PATH=/home/bitcraze/ros_workspace/devel/share/crazyflie_demo/cmake
+
 //Value Computed by CMake
 crazyflie_demo_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyflie_ros/crazyflie_demo
 
@@ -335,6 +341,9 @@ crazyflie_description_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyfl
 //Value Computed by CMake
 crazyflie_driver_BINARY_DIR:STATIC=/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_driver
 
+//The directory containing a CMake configuration file for crazyflie_driver.
+crazyflie_driver_DIR:PATH=/home/bitcraze/ros_workspace/devel/share/crazyflie_driver/cmake
+
 //Value Computed by CMake
 crazyflie_driver_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyflie_ros/crazyflie_driver
 
@@ -343,6 +352,9 @@ crazyflie_server_DIR:PATH=crazyflie_server_DIR-NOTFOUND
 
 //Value Computed by CMake
 crazyflie_tools_BINARY_DIR:STATIC=/home/bitcraze/ros_workspace/build/crazyflie_ros/crazyflie_tools
+
+//The directory containing a CMake configuration file for crazyflie_tools.
+crazyflie_tools_DIR:PATH=/home/bitcraze/ros_workspace/devel/share/crazyflie_tools/cmake
 
 //Value Computed by CMake
 crazyflie_tools_SOURCE_DIR:STATIC=/home/bitcraze/ros_workspace/src/crazyflie_ros/crazyflie_tools
@@ -626,7 +638,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=9
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
