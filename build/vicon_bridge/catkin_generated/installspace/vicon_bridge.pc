@@ -1,0 +1,8 @@
+prefix=/home/bitcraze/ros_workspace/install
+
+Name: vicon_bridge
+Description: Description of vicon_bridge
+Version: 1.0.1
+Cflags: -I/home/bitcraze/ros_workspace/install/include
+Libs: -L/home/bitcraze/ros_workspace/install/lib 
+Requires: dynamic_reconfigure geometry_msgs message_runtime roscpp

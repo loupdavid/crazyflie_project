@@ -1,0 +1,8 @@
+prefix=/home/bitcraze/ros_workspace/install
+
+Name: crazyflie_driver
+Description: Description of crazyflie_driver
+Version: 0.0.1
+Cflags: -I/home/bitcraze/ros_workspace/install/include
+Libs: -L/home/bitcraze/ros_workspace/install/lib 
+Requires: message_runtime std_msgs tf crazyflie_cpp

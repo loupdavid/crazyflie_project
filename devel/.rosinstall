@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bitcraze/ros_workspace/devel/setup.sh

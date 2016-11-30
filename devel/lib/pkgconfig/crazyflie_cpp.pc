@@ -1,0 +1,8 @@
+prefix=/home/bitcraze/ros_workspace/devel
+
+Name: crazyflie_cpp
+Description: Description of crazyflie_cpp
+Version: 0.0.1
+Cflags: -I/home/bitcraze/ros_workspace/src/crazyflie_ros/crazyflie_cpp/include
+Libs: -L/home/bitcraze/ros_workspace/devel/lib -lcrazyflie_cpp
+Requires: 
