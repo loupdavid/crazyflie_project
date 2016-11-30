@@ -25,15 +25,27 @@ def soft_land(t, p):
 	p.publish(t)
 
 if __name__ == '__main__':
+	#Init Node and Topic
 	rospy.init_node('crazyflie_test_controller', anonymous=True)
 	p = rospy.Publisher('cmd_vel', Twist)
 	twist = Twist()
-	r = rospy.Rate(10) #10 Hz
-	#self._land = rospy.ServiceProxy('land', Empty)
-#for i in range(0, 100):
-#    p.publish(twist)
-#    r.sleep()
 
+	#Init Ros Param (LED)
+	rospy.wait_for_service('update_params')
+	rospy.loginfo("found update_params service")
+ 	update_params = rospy.ServiceProxy('update_params', UpdateParams)
+	rospy.set_param("ring/headlightEnable", 0)
+	update_params(["ring/headlightEnable"])
+	rospy.set_param("ring/effect", 7)
+	rospy.set_param("ring/solidGreen", 0)
+	rospy.set_param("ring/solidBlue", 0)
+	rospy.set_param("ring/solidRed", 20)
+	update_params(["ring/solidGreen"])
+	update_params(["ring/solidBlue"])
+	update_params(["ring/solidRed"])
+	update_params(["ring/effect"])
+
+	r = rospy.Rate(10) #10 Hz
 	twist.linear.z = 38000
 	twist.angular.z = 0
 	for i in range(0,20):
@@ -45,15 +57,3 @@ if __name__ == '__main__':
 		r.sleep()
 
 	soft_land(twist,p)	
-	#for i in range(0,20):
-	#	twist.linear.z = 20000
-	#	twist.linear.y = 10
-	#	p.publish(twist)
-	#	r.sleep()
-
-	#self._land()
-
-	while not rospy.is_shutdown():
-		p.publish(twist)
-		r.sleep()
-
