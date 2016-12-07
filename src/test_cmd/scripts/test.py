@@ -14,46 +14,80 @@ def clear_twist(t):
 	t.angular.y = 0
 	t.angular.z = 0
 
-def soft_land(t, p):
+def soft_land(t, p, time):
 	r = rospy.Rate(10)
-	clear_twist(t)
-	t.linear.z = 28000
-	for i in range(0,22):
+	p.publish(t)
+	t.angular.x = 0
+	t.angular.y = 0
+	t.angular.z = 0
+	t.linear.y = 0
+	t.linear.x = 0
+	t.linear.z = 36000
+	p.publish(t)
+	for i in range(0,time*10):
+		print "ladning"
 		p.publish(t)
 		r.sleep()
 	clear_twist(t)
 	p.publish(t)
 
-if __name__ == '__main__':
+#Monter Descendre
+def test1(p):
 	#Init Node and Topic
-	rospy.init_node('crazyflie_test_controller', anonymous=True)
-	p = rospy.Publisher('cmd_vel', Twist)
 	twist = Twist()
 
-	#Init Ros Param (LED)
-	rospy.wait_for_service('update_params')
-	rospy.loginfo("found update_params service")
- 	update_params = rospy.ServiceProxy('update_params', UpdateParams)
-	rospy.set_param("ring/headlightEnable", 0)
-	update_params(["ring/headlightEnable"])
-	rospy.set_param("ring/effect", 7)
-	rospy.set_param("ring/solidGreen", 0)
-	rospy.set_param("ring/solidBlue", 0)
-	rospy.set_param("ring/solidRed", 20)
-	update_params(["ring/solidGreen"])
-	update_params(["ring/solidBlue"])
-	update_params(["ring/solidRed"])
-	update_params(["ring/effect"])
+	r = rospy.Rate(10) #10 Hz
+	twist.linear.z = 41000
+	twist.angular.z = 0
+	for i in range(0,15):
+		print "monter"
+		p.publish(twist)
+		r.sleep()
+	twist.linear.z = 39300
+	for i in range(0,10):
+		print "stable"
+		p.publish(twist)
+		r.sleep()
+	twist.angular.z = 15
+	for i in range(0,20):
+		print "rotation"
+		p.publish(twist)
+		r.sleep()
+
+	p.publish(twist)
+	soft_land(twist,p,5)
+
+#Translation
+def test2(p):
+	#Init Node and Topic
+	twist = Twist()
 
 	r = rospy.Rate(10) #10 Hz
-	twist.linear.z = 38000
+	twist.linear.z = 41000
 	twist.angular.z = 0
-	for i in range(0,20):
+	for i in range(0,2):
+		print "monter"
 		p.publish(twist)
 		r.sleep()
-	twist.linear.z = 34000
+	#stable en z
+	twist.linear.z = 39300
 	for i in range(0,20):
+		print "stable"
+		p.publish(twist)
+		r.sleep()
+	#translation
+	twist.linear.y = 10
+	#twist.angular.z = 15
+	for i in range(0,10):
+		print "translation"
 		p.publish(twist)
 		r.sleep()
 
-	soft_land(twist,p)	
+	twist.linear.y = -10
+	p.publish(twist)
+	soft_land(twist,p,3)
+
+if __name__ == '__main__':
+	rospy.init_node('crazyflie_test_controller', anonymous=True, log_level=rospy.WARN)
+	p = rospy.Publisher('cmd_vel', Twist)
+	test2(p)
