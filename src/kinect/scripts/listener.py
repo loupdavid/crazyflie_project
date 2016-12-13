@@ -12,6 +12,7 @@ import cv2
 import numpy as np
 from cv_bridge import CvBridge, CvBridgeError
 import collections
+from datetime import datetime
 
 
 class ImageConverter(object):
@@ -25,7 +26,10 @@ class ImageConverter(object):
 		self.middle_y = 320
 		self.buffer_y = collections.deque()
 		self.buffer_z = collections.deque()
-	
+		self.prev_z = 0
+		self.prev_y = 0
+		self.prev_time = 0
+
 	def to_centimeters(self, x):
 		return (x*2.54/96)
 
@@ -45,7 +49,7 @@ class ImageConverter(object):
 		try:
 			# Depth
 			depth_image = self.bridge.imgmsg_to_cv(data, "32FC1")
-		
+
 		except CvBridgeError as e:
 			print(e)
 
@@ -56,29 +60,37 @@ class ImageConverter(object):
 		z_cm = self.to_centimeters(z)
 		x = minVal
 		x_cm = self.to_centimeters(x)
+		now = datetime.now()
 
+		#dz = z - self.prev_z
+		#dy = y - self.prev_y
+		speed = dz / dt
 		print("X,Y,Z cm : %s %s %s" % (str(x_cm),str(y_cm),str(z_cm)))
 
 		y = y - self.middle_y
 		z = -(z - self.middle_z)
+		dz = z - self.prev_z
+		dy = y - self.prev_y
+		dt = (now - self.prev_time).total_seconds()
+		dv_z = dz / dt
+		dv_y = dy / dt
+
 
 		#y, z = self.moving_average(y, z)
-		
+
 		try:
 			l = list(minLoc)
-			minloc_str = "%s %s %s " % (str(x), str(y), str(z))
+			publish_str = "%s %s %s %s %s" % (str(x), str(y), str(z), str(dspeed), str(dv_y))
 			print("X,Y,Z px : %s" %  str(minloc_str))
-			#r = rospy.Rate(10)
-			
-			self.image_pub.publish(str(minloc_str)) 
-			#self.image_pub.publish(minloc_str)
+			self.image_pub.publish(str(publish_str))
+
 		except:
 			print("Cannot publish")
-	
+
 
 def main():
 	imconv = ImageConverter()
-	
+
 	try:
 		rospy.spin()
 	except KeyboardInterrupt:
