@@ -98,7 +98,7 @@ def callback_sensor(data, args):
 
 def calc_z(delta, current_z_speed, current_z):
 	#PID Values
-	p = -4
+	p = -13
 	d = 20
 	global equilibre
 	global max_pousse
@@ -174,10 +174,10 @@ def calc_y(delta, current_y_speed, current_y):
 	else:
 		print("Go droite (positif)")
 		res = current_y + p*float(delta) - d*float(current_y_speed)
-	if res > 3:
-		res = 3
-	elif res < -3:
-		res = -3
+	if res > 1:
+		res = 1
+	elif res < -1:
+		res = -1
 	print("old y:"+str(current_y)+" new y:"+str(res))
 	return res
 
@@ -194,7 +194,7 @@ def callback_kinect(data, args):
 	print("x:"+x+" y:"+y+" z:"+z)
 	if int(decollage) == False:
         	twist.linear.z = calc_z(z, current_z_speed, twist.linear.z)
-        	#twist.linear.y = calc_y(y, current_y_speed, twist.linear.y)	
+        	twist.linear.y = calc_y(y, current_y_speed, twist.linear.y)	
         	twist.linear.x = calc_x(x, current_x_speed, twist.linear.x)	
 	else:
 		print("Mode decollage : Delta non pris en compte")	
@@ -208,9 +208,9 @@ if __name__ == '__main__':
 	global max_pousse
 	global min_pousse
 	#Reglage drone 1
-	equilibre = 38600
-	max_pousse = 41300
-	min_pousse = 37500
+	equilibre = 40000
+	max_pousse = 42300
+	min_pousse = 40000
 	#Reglage drone 2
 	#equilibre = 37000
 	#max_pousse = 37800
