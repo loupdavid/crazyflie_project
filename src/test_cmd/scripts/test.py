@@ -63,12 +63,12 @@ def test2(p):
 	twist = Twist()
 
 	r = rospy.Rate(10) #10 Hz
-	twist.linear.z = 41000
+	#twist.linear.z = 41000
 	twist.angular.z = 0
-	for i in range(0,2):
-		print "monter"
-		p.publish(twist)
-		r.sleep()
+	#for i in range(0,2):
+	#	print "monter"
+	#	p.publish(twist)
+	#	r.sleep()
 	#stable en z
 	twist.linear.z = 39300
 	for i in range(0,20):
@@ -77,6 +77,13 @@ def test2(p):
 		r.sleep()
 	#translation
 	twist.linear.y = 10
+	#twist.angular.z = 15
+	for i in range(0,10):
+		print "translation"
+		p.publish(twist)
+		r.sleep()
+	#translation
+	twist.linear.y = -10
 	#twist.angular.z = 15
 	for i in range(0,10):
 		print "translation"

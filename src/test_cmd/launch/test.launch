@@ -14,7 +14,7 @@
       <arg name="enable_logging" value="True" />
     </include>
 
-    <node name="crazyflie_test_controller" pkg="test_cmd" type="test.py" output="screen">
+    <node name="crazyflie_test_controller" pkg="test_cmd" type="test_control_imu.py" output="screen">
     </node>
   </group>
 
