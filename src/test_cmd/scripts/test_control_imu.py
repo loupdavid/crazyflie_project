@@ -208,9 +208,9 @@ if __name__ == '__main__':
 	global max_pousse
 	global min_pousse
 	#Reglage drone 1
-	equilibre = 40000
+	equilibre = 39500
 	max_pousse = 42300
-	min_pousse = 40000
+	min_pousse = 39500
 	#Reglage drone 2
 	#equilibre = 37000
 	#max_pousse = 37800
